@@ -358,13 +358,13 @@ footer p {
 .section-3 .title{
   font-size:2rem;
   font-weight: 800;
-  padding-bottom:1rem ;
+  padding-bottom:1.5rem ;
   color: #441801;
 }
 .section-4 .title{
   color: #441801;
   font-size:2rem;
   font-weight: 800;
-  padding-bottom:1rem ;
+  padding-bottom:1.5rem ;
 }
 .section-3 .content, .section-4 .content{ text-align: justify;}
