@@ -1,0 +1,220 @@
+Smooth Scrolling
+body{
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+nav{ 
+    /* background-color: rgb(173, 113, 41) !important;  */
+    height: 3rem;
+}
+nav img{ height: 2rem;}
+.navbar-toggler{
+    border: 3px red;
+    border: none !important;
+    
+}
+.navbar-brand{ padding-top: 0 !important;}
+#title{
+    font-family: jetBeans Mono;
+    color: rgb(37, 20, 1);
+    font-weight: 800;
+}
+#current-page{ 
+    color: rgb(1, 0, 49);
+    text-decoration: underline;
+    font-weight: 700;
+    /* font-size: 1.5rem; */
+}
+#hero{
+    position: relative;
+    width:100%;
+    margin: 0;
+    height: 65vh;
+}
+#hero::before{
+    content: '';
+    background: rgba(15, 21, 37,.8);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+}
+#hero .container{
+    width: 80%;
+    margin:0 auto;
+    padding: 4rem 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+header{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h1{ 
+    font-size: 3rem;
+    /* max-width: 80%; */
+    font-family: jetBrains mono;
+    line-height: 2;
+    color: white !important;
+    font-weight: 900;
+    /* text-align: right; */
+}
+h1 span{
+    color: yellow ;
+    text-decoration: underline;
+}
+video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100% ;
+    height: 100%;
+    z-index: -2;
+}
+.container button{
+    background-color: var(--color-main);
+    color: white;
+    padding: 1rem;
+    /* border: 3px solid rgb(69, 31, 1); */
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    /* font-family: 'Figtree', sans-serif; */
+    font-family: jetBrains mono;
+    /* font-weight: 800; */
+}
+.hero-content h1{color: yellow; font-size: 5rem;}
+.hero-content p {color: white; font-size: 1.5rem;}
+.scroll-arrow span{ font-size: 4rem;}
+/* Hero Section */
+.hero-content h1, .hero-content p, .cta-btn, .scroll-arrow {
+    z-index: 2;
+    position: relative;
+  }
+ 
+  .btn{ 
+    background-color: #c4540a !important;
+    border: none !important;
+  }
+  
+  /* Button Styles */
+  .cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ff4c4c;
+    padding: 18px 35px;
+    box-shadow: 0 5px 15px rgba(255, 75, 75, 0.4);
+  }
+  
+  /* Scroll Arrow Styles */
+  .scroll-arrow {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .scroll-arrow span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    animation: scrollAnim 1.5s infinite;
+  }
+  
+  .scroll-arrow span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .scroll-arrow span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  /* Arrow Animation */
+  @keyframes scrollAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px) rotate(45deg);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0) rotate(45deg);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(10px) rotate(45deg);
+    }
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-in Effect for Paragraph */
+  .fade-in {
+    font-size: 1.4rem;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 4s ease-out 0.5s forwards;
+  }
+  
+
+@media screen and  (max-width: 500px) {
+  
+  .collapse{
+    background-color: #fff !important;
+    height: 100vh !important;
+    z-index: 1111;
+    width: 100vw !important;
+    padding: 1rem !important;
+
+  }
+}
+
+
+@media (max-width: 576px) {
+  .footer-links li {
+      display: block; /* Stack links vertically on mobile */
+      margin-bottom: 10px;
+  }
+}
+
+
+@media screen and (max-width:500px) {
+    
+    .hero-content h1{color: yellow; font-size: 2rem;}
+.hero-content p {color: white; font-size: 1rem;}
+}
+
+
