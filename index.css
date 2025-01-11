@@ -1,5 +1,6 @@
 Smooth Scrolling
 body{
+  overflow-y: hidden !important;
 }
 html {
   overflow-x: hidden;
@@ -69,6 +70,8 @@ h1 span{
     color: yellow ;
     text-decoration: underline;
 }
+.section-2 h1{ color: #441801 !important; font-weight: 600;}
+.section-2 p{ color: #441801 !important;}
 video{
     position: absolute;
     left: 0;
@@ -279,7 +282,7 @@ video{
 /* Slider Container */
 .category-slider {
   position: relative;
-  width: 100%;
+  width: 85%;
   max-width: 800px;
   height: 400px;
   margin: 0 auto;
@@ -325,7 +328,8 @@ video{
 
 
 footer {
-  background-color: #333;
+  background-color: #441801;
+  width: 100vw;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -337,7 +341,7 @@ footer h4, footer h5 {
 }
 
 footer a {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
 }
 
@@ -348,21 +352,18 @@ footer a:hover {
 footer p {
   margin: 5px 0;
 }
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
+.section-4{padding:1rem;}
+.section-3{padding:1rem;}
+.section-3 .title{
+  font-size:2rem;
+  font-weight: 800;
+  padding-bottom:1rem ;
+  color: #441801;
 }
-
-footer a:hover {
-  color: #f39c12;
+.section-4 .title{
+  color: #441801;
+  font-size:2rem;
+  font-weight: 800;
+  padding-bottom:1rem ;
 }
-
-footer i {
-  font-size: 20px;
-}
-
-footer h4, footer h5 {
-  margin-bottom: 10px;
-}
+.section-3 .content, .section-4 .content{ text-align: justify;}

@@ -233,3 +233,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set interval for automatic sliding
   setInterval(nextSlide, 3000); // Change slide every 3 seconds
 });
+
+
+new TypeIt("#about1", {
+  strings: "About Elite-fabrics!",
+  speed: 300,
+  loop: true,
+}).go();
+
+new TypeIt("#about2", {
+  strings: "Our Mission!",
+  speed: 300,
+  loop: true,
+}).go();
+
+
+
