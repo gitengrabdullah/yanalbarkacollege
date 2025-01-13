@@ -242,7 +242,7 @@ new TypeIt("#about1", {
 }).go();
 
 new TypeIt("#about2", {
-  strings: "Our Mission!",
+  strings: "Our Vission!",
   speed: 300,
   loop: true,
 }).go();
