@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 new TypeIt("#about1", {
-  strings: "About Elite-fabrics!",
+  strings: "About Yan-albarka!",
   speed: 300,
   loop: true,
 }).go();

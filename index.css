@@ -66,8 +66,8 @@ h1{
     font-weight: 900;
     /* text-align: right; */
 }
-h1 span{
-    color: yellow ;
+h1 #yan{
+    color: #dc7e0d ;
     text-decoration: underline;
 }
 .section-2 h1{ color: #441801 !important; font-weight: 600;}
@@ -203,6 +203,7 @@ video{
     padding: 1rem !important;
 
   }
+.hero-content h1{ font-size: 1.6rem !important;}
 }
 
 .section-2{
